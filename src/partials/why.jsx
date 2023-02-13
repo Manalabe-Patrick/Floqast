@@ -15,7 +15,7 @@ const Why = () => {
       <div className="flex flex-wrap">
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <div key={index} className="w-1/2 md:w-1/3 p-2 md:p-6">
-            <div className="bg-white rounded-lg shadow-md py-4 mb-6">
+            <div className="bg-white rounded-lg shadow-md py-4 mb-4">
               <img
                 src="https://via.placeholder.com/500X500"
                 alt="image here"

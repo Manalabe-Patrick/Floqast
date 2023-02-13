@@ -17,7 +17,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="isolate bg-white fixed w-full ">
+    <div className="isolate bg-white fixed w-full z-10">
       {/* header contacts and social medias */}
       <div className="px-6 py-2 xl:px-72 lg:px-38 flex justify-between ">
         <div className="flex">

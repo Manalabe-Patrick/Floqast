@@ -16,12 +16,12 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor.
         </p>
-        <button className="bg-main text-slate-200 font-semibold px-10 py-3 rounded-md mt-4 hover:bg-green-700 block mx-auto md:absolute -z-10">
+        <button className="bg-main text-slate-200 font-semibold px-10 py-3 rounded-md mt-4 hover:bg-green-700 block mx-auto md:absolute">
           SCHEDULE A DEMO
         </button>
       </div>
       <div
-        className="w-3/5 header-bg mt-5 absolute top-0 right-0 -z-10 opacity-60 md:opacity-90"
+        className="w-3/5 header-bg mt-5 absolute top-0 right-0 -z-20 opacity-60 md:opacity-90"
         style={{ height: "40rem" }}
       ></div>
       {/* header cards */}
