@@ -17,9 +17,9 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="isolate bg-white fixed w-full">
+    <div className="isolate bg-white fixed w-full ">
       {/* header contacts and social medias */}
-      <div className="px-6 py-2 xl:px-72 lg:px-38 flex justify-between">
+      <div className="px-6 py-2 xl:px-72 lg:px-38 flex justify-between ">
         <div className="flex">
           <svg
             className="mr-2"
@@ -129,7 +129,7 @@ const Header = () => {
       </div>
       <hr className="h-.1 bg-slate-300" />
       {/* main navigation */}
-      <div className="px-6 py-5 xl:px-72 lg:px-38 ">
+      <div className="px-6 py-5 xl:px-72 lg:px-38 header">
         <nav className="flex items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -159,7 +159,7 @@ const Header = () => {
             ))}
             <a
               href="#"
-              className="text-sm font-semibold text-slate-200 bg-main py-2 px-4 rounded-sm "
+              className="text-sm font-semibold text-slate-200 bg-main py-2 px-4 rounded-sm hover:bg-green-700 "
             >
               DEMO NOW
             </a>
@@ -199,7 +199,7 @@ const Header = () => {
                   ))}
                   <a
                     href="#"
-                    className="-mx-3 block py-2.5 px-3 text-base text-center font-semibold leading-6 text-slate-200 hover:bg-gray-400/10  bg-main rounded-sm"
+                    className="-mx-3 block py-2.5 px-3 text-base text-center font-semibold leading-6 text-slate-200 hover:bg-gray-400/10  bg-main rounded-sm "
                   >
                     Demo
                   </a>
