@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 //components
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   useEffect(() => {
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
+      <AboutUs />
     </div>
   );
 }
