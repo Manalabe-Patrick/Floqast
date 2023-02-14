@@ -15,7 +15,7 @@ const Partners = () => {
       {/* partners */}
       <div className="flex flex-wrap justify-center ">
         {[1, 2, 3, 4, 5, 6, 7].map((partner, i) => (
-          <div className="w-1/2 md:w-1/5 p-2 flex " key={i}>
+          <div className="w-1/2 md:w-1/5 p-2 flex " key={i} data-aos="zoom-in">
             <svg
               className="w-1/2 h-auto mx-auto"
               viewBox="163.5 163.50000000000003 285 285"

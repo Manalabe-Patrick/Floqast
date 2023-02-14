@@ -8,7 +8,12 @@ const About = () => {
       <div className="flex flex-wrap lg:flex-no-wrap">
         <div className="w-full lg:w-1/2 p-5">
           {/* about us image */}
-          <img src={bgAbout} alt="Your Image" className="rounded-xl" />
+          <img
+            src={bgAbout}
+            alt="Your Image"
+            className="rounded-xl"
+            data-aos="zoom-out"
+          />
         </div>
         <div className="w-full lg:w-1/2 p-5">
           <div className="text-2xl font-bold mb-4 text-blue-500">About us</div>

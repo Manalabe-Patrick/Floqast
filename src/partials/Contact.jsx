@@ -20,7 +20,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="bg-main py-2  px-3 font-semibold md:ml-2 text-slate-200 block md:inline m-auto "
+              className="bg-main py-2  px-3 font-semibold md:ml-2 text-slate-200 block md:inline m-auto hover:bg-green-800"
             >
               SCHEDULE NOW
             </button>

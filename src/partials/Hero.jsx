@@ -3,7 +3,11 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="px-6 py-2 xl:px-72 lg:px-38">
+      <div
+        className="px-6 py-2 xl:px-72 lg:px-38 "
+        data-aos="zoom-y-out"
+        data-aos-delay="150"
+      >
         <h1 className="pt-48 xl:text-5xl text-4xl font-bold text-gray-600 text-center md:text-start">
           The
           <span className="text-main "> Fastest, Most Accurate </span>
@@ -23,12 +27,17 @@ const Hero = () => {
       <div
         className="w-3/5 header-bg mt-5 absolute top-0 right-0 -z-20 opacity-60 md:opacity-90"
         style={{ height: "40rem" }}
+        data-aos="zoom-out-up"
+        data-aos-delay="200"
       ></div>
       {/* header cards */}
       <div>
         <div className="container mx-auto px-6 md:mt-48">
           <div className="flex flex-wrap justify-center">
-            <div className="w-64 h-64 bg-white rounded-lg shadow-md m-6 mx-7 p-6 flex flex-col items-center justify-center">
+            <div
+              className="w-64 h-64 bg-white rounded-lg shadow-md m-6 mx-7 p-6 flex flex-col items-center justify-center"
+              data-aos="fade-up"
+            >
               <img
                 className="h-20 w-20 rounded-full mx-auto"
                 src="https://via.placeholder.com/500X500"
@@ -41,7 +50,10 @@ const Hero = () => {
                 Your description here. Lorem ipsum dolor sit amet.
               </p>
             </div>
-            <div className="w-64 h-64 bg-main rounded-lg shadow-md m-6 mx-12 p-6 flex flex-col items-center justify-center ">
+            <div
+              className="w-64 h-64 bg-main rounded-lg shadow-md m-6 mx-12 p-6 flex flex-col items-center justify-center "
+              data-aos="fade-up"
+            >
               <img
                 className="h-20 w-20 rounded-full mx-auto"
                 src="https://via.placeholder.com/500X500"
@@ -54,7 +66,10 @@ const Hero = () => {
                 Your description here. Lorem ipsum dolor sit amet.
               </p>
             </div>
-            <div className="w-64 h-64 bg-white rounded-lg shadow-md m-6 mx-7 p-6 flex flex-col items-center justify-center">
+            <div
+              className="w-64 h-64 bg-white rounded-lg shadow-md m-6 mx-7 p-6 flex flex-col items-center justify-center"
+              data-aos="fade-up"
+            >
               <img
                 className="h-20 w-20 rounded-full mx-auto"
                 src="https://via.placeholder.com/500X500"

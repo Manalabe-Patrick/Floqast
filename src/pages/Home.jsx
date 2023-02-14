@@ -25,6 +25,8 @@ const Home = () => {
         alt="Image here"
         className="hidden md:block w-full absolute right-0 -z-10"
         style={{ top: "126rem", height: "28rem" }}
+        data-aos="zoom-y-out"
+        data-aos-delay="150"
       />
       <Why />
       <How />
