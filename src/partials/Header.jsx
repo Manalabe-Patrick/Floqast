@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from ".././assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const navigation = [
   {
@@ -32,6 +33,7 @@ const navigation = [
         </g>
       </svg>
     ),
+    link: "/home",
   },
   {
     name: "About us",
@@ -56,6 +58,7 @@ const navigation = [
         </g>
       </svg>
     ),
+    link: "/about",
   },
   {
     name: "Services",
@@ -87,30 +90,9 @@ const navigation = [
         </g>
       </svg>
     ),
+    link: "/services",
   },
   // { name: "FAQ", href: "#" },
-  {
-    name: "Contact",
-    href: "#",
-    icon: (
-      <svg
-        fill="#000000"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-6 float-left mr-4"
-      >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          <path d="M20,1H4A1,1,0,0,0,3,2V22a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V2A1,1,0,0,0,20,1ZM19,21H5V3H19ZM9,8.5a3,3,0,1,1,3,3A3,3,0,0,1,9,8.5Zm-2,9a5,5,0,0,1,10,0,1,1,0,0,1-2,0,3,3,0,0,0-6,0,1,1,0,0,1-2,0Z"></path>
-        </g>
-      </svg>
-    ),
-  },
 ];
 
 const Header = () => {
@@ -232,10 +214,13 @@ const Header = () => {
       <div className="px-6 py-5 xl:px-72 lg:px-38 header">
         <nav className="flex items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Floqast</span>
-              <img className="h-6" src={logo} alt="" />
-            </a>
+            <Link to="/">
+              {" "}
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Floqast</span>
+                <img className="h-6" src={logo} alt="" />
+              </a>{" "}
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -249,13 +234,14 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-10">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm  leading-8 text-gray-700 font-semibold"
-              >
-                {item.name}
-              </a>
+              <Link to={item.link} key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-sm  leading-8 text-gray-700 font-semibold"
+                >
+                  {item.name}
+                </a>
+              </Link>
             ))}
             <a
               href="#"

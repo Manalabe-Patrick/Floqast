@@ -1,20 +1,18 @@
 import React from "react";
 
-// imports
-import bgFour from "../assets/images/bg_4.png";
-
 //partials
 import Header from "../partials/Header";
-import About from "../partials/About";
-import MBG from "../partials/MBG";
-import Team from "../partials/Team";
+import Service from "../partials/service";
+import How from "../partials/How";
 import Footer from "../partials/Footer";
 
-const AboutUs = () => {
+import bgFour from "../assets/images/bg_7.png";
+
+const Services = () => {
   return (
     <div>
-      <Header />
       <div>
+        <Header />
         <h1 className="pt-40 md:pt-56 xl:text-5xl text-4xl font-bold text-center text-slate-200 opacity-90 pb-20 md:pb-40 ">
           About us
         </h1>
@@ -27,12 +25,11 @@ const AboutUs = () => {
         />
       </div>
 
-      <About />
-      <MBG />
-      <Team />
+      <Service />
+      <How />
       <Footer />
     </div>
   );
 };
 
-export default AboutUs;
+export default Services;

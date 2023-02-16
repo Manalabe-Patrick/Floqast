@@ -5,7 +5,10 @@ import bgFive from "../assets/images/bg_5.png";
 
 const MBG = () => {
   return (
-    <div className="px-6 py-2 xl:px-72 lg:px-38 mt-20 md:mt-48">
+    <div
+      className="px-6 py-2 xl:px-72 lg:px-38 mt-20 md:mt-48"
+      data-aos="fade-down"
+    >
       <div>
         <h1 className="text-center text-2xl font-bold mb-4 text-blue-500">
           Our Mission, Vission, ang Goals

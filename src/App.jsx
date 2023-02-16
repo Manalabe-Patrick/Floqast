@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 //components
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -20,8 +22,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Home /> */}
-      <AboutUs />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
     </div>
   );
 }
